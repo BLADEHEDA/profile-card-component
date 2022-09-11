@@ -1,0 +1,90 @@
+/* lets is=nsert the fornt provided to us  */
+@import url((https://fonts.google.com/specimen/Kumbh+Sans));
+
+/* inserting a reference forthe colors such that it would be easy to use in our project  */
+:root{
+    --Dark-cyan: hsl(185, 75%, 39%);
+--Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+--Dark-grayish-blue: hsl(227, 10%, 46%);  
+}
+/* lets apply some properties to the whole page at once */
+*{
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-image: url(./images/bg-pattern-top.svg) ,url(./images/bg-pattern-bottom.svg);
+    background-position: -25em -30em , 40em 15em; 
+    background-repeat: no-repeat, no-repeat;
+    background-color: hsl(185, 75%, 39%) ;
+}
+.container{
+    max-width: 320px;
+    height: 350px;
+    border-radius: 20px;;
+    display: flex;
+    flex-direction: column;
+    background: white;;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.bottom{
+  display: flex;
+  flex:65%;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 2em;;
+}
+.stats{
+    display: flex;
+    justify-content: space-around;
+}
+.top{
+    flex:35%;
+    margin-bottom: 2em;;
+}
+.victor{
+    position: absolute;
+    border-radius: 50%; 
+    height: 95px;;
+    border: solid 3px white;
+    top:3em;
+    left:7em;
+
+} 
+.first{
+    margin: auto;;
+  
+}
+.figure,.name{
+    color: hsl(229, 23%, 23%);
+font-weight: bolder;
+}
+.nature{
+    color: var(--Dark-grayish-blue);
+    font-size: 12px;
+}
+.london{
+    color: var(--Dark-grayish-blue);
+    margin-left: 2em;
+}
+.num{
+    color: var(--Dark-grayish-blue);
+}
+
+
+
+
+
+
+
+
+
+
+
